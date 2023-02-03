@@ -36,11 +36,10 @@ Spring(Boot, Data, Security), React, Redux Toolkit, JWT auth
       username:
       password: 
 ```
-  
+&emsp; Представлены два способа запуска проекта. Во втором способе собирается jar-ник сперва
   1. ```bash
       mvn spring-boot:run
       ```
-&emsp;  Другой способ с использованием jar 
   2. ```bash
       mvn package
       java -jar target/web-1.0.jar
@@ -79,3 +78,12 @@ Spring(Boot, Data, Security), React, Redux Toolkit, JWT auth
 * ___Дополнительные требования к приложению:___
   * Все результаты проверки должны сохраняться в базе данных под управлением СУБД PostgreSQL.
   * Для доступа к БД необходимо использовать Spring Data.
+
+<br/>
+
+---
+* ___Полезные ресурсы___
+  * [Spring Core](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#spring-core)
+  * [Spring Security](https://docs.spring.io/spring-security/reference/index.html)
+  * [Redux](https://redux.js.org/), [Redux Toolkit](https://redux-toolkit.js.org/)
+  * [JWT](https://jwt.io/)
