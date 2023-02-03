@@ -23,5 +23,6 @@
 hs_err_pid*
 /target/
 /.idea/
-/src/main/web4-frontend/build/
-/src/main/web4-frontend/node_modules/
+/src/main/frontend/build/
+/src/main/frontend/node_modules/
+*.iml

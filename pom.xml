@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.itmo</groupId>
 	<artifactId>web</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>web-lab-4</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -110,7 +110,7 @@
 				<version>1.12.1</version>
 
 				<configuration>
-					<workingDirectory>src/main/web4-frontend</workingDirectory>
+					<workingDirectory>src/main/frontend</workingDirectory>
 					<installDirectory>target</installDirectory>
 				</configuration>
 
@@ -159,7 +159,7 @@
 							<outputDirectory>target/classes/static</outputDirectory>
 							<resources>
 								<resource>
-									<directory>src/main/web4-frontend/build/</directory>
+									<directory>src/main/frontend/build/</directory>
 								</resource>
 							</resources>
 						</configuration>

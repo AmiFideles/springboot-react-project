@@ -1,15 +1,15 @@
 spring:
   application:
-    name: web-lab-4
+    name: springboot-react-project
   jpa:
     hibernate:
-      ddl-auto:
+      ddl-auto: update
   datasource:
-    url:
-    username:
-    password:
-accessTokenSecret:
-refreshTokenSecret:
+    url: ${DATASOURCE_URL}
+    username: admin
+    password: changeme
+accessTokenSecret: testAccessTokenSecret
+refreshTokenSecret: testRefreshTokenSecret
 accessTokenExpirationMinutes: 1
 refreshTokenExpirationDays: 2
 
