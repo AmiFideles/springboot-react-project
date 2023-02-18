@@ -4,8 +4,12 @@ services:
     build: ./
     ports:
       - '8080:8080'
+    depends_on:
+      - db
     environment:
-      DATASOURCE_URL: jdbc:postgresql://db:5434/database
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/database
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: changeme
   db:
     image: postgres
     restart: always
@@ -14,7 +18,7 @@ services:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=changeme
     ports:
-      - '5434:5432'
+      - "5433:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
 volumes:
